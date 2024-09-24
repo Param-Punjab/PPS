@@ -1,26 +1,23 @@
-// Swaping two numbers with the help of third variable, Numbers input by the user.
+//Basic salary of john is input through keyboard. His dearness allowance is 40% of basic salary write a program to calculate grass salary.
+
 #include <iostream>
 using namespace std;
 
 int main() {
-    int A, B, C;
 
-    cout << "Enter value of A: " << endl;
-    cin >> A; // For example, A = 10
+	float basic_salary, dearness_allowance, gross_salary;
 
-    cout << "Enter value of B: " << endl;
-    cin >> B; // For example, B = 5
+	cout << "Enter John's basic salary: ";
+	cin >> basic_salary;
 
-    cout << "Before swapping" << endl;
-    cout << "A = " << A << endl << "B = " << B << endl;
+	dearness_allowance = 0.40*basic_salary;
 
-    // Swapping logic using a third variable
-    C = A;  // Store the value of A in C
-    A = B;  // Assign the value of B to A
-    B = C;  // Assign the value of C (original A) to B
+	gross_salary = basic_salary+dearness_allowance;
 
-    cout << "After swapping: " << endl;
-    cout << "A = " << A << endl << "B = " << B << endl;
+	cout << "Basic Salary: " << basic_salary << endl;
+	cout << "Dearness Allowance: " << dearness_allowance << endl;
+	cout << "Gross Salary: " << gross_salary << endl;
+	cout << endl << "Name: Paramveer Singh" << endl << "Roll Number: 2415209" << endl;
 
-    return 0;
+	return 0;
 }
